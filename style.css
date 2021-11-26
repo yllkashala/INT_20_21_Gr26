@@ -1,8 +1,43 @@
-https://github.com/yllkashala/INT_20_21_Gr26.git
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bc.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #CB997E;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+
+}
+ul li a:hover{
+    background-color: #CB997E;
+    color: #FFE8D6;
+}
+ul li.active a{
+    background-color: #A5A58D;
+    color: #FFE8D6;
+}
 
 .logo img{
     float: left;
-    margin-left: 20px;
+    margin-left: 35px;
+    margin-top: 5px;
     width: 100px;
     height: auto ;
 }
@@ -17,7 +52,7 @@ https://github.com/yllkashala/INT_20_21_Gr26.git
     left: 50%;
     transform: translate(-50%,-50%);
     color: #FFE8D6;
-    font-size: 200%;
+    font-size:300%;
     text-align: center;
 }
 
@@ -25,7 +60,7 @@ https://github.com/yllkashala/INT_20_21_Gr26.git
 
 }
 .artistet header{
-    background-image: artistet.png;
+    background-image: "artistet.png";
 }
 .titulli-a{
         position: absolute;
@@ -37,17 +72,18 @@ https://github.com/yllkashala/INT_20_21_Gr26.git
     text-align: center;
 }
  
-.grey-section {
+.a-section {
     background-color: #CB997E;
 }
 
-.grey-content {
+.a-content {
     color: #6B705C;
     height: 120vh;
+    align: center;
 
 }
 
-.grey-content hr {
+.a-content hr {
     border: 1.5px solid #6B705C;
     border-radius: 10px;
     background-color: #6B705C;
@@ -55,40 +91,41 @@ https://github.com/yllkashala/INT_20_21_Gr26.git
     margin: auto;
 }
 
-.grey-content h5 {
+.a-content h5 {
     color: #6B705C;
     padding-bottom: 10px;
     color: #6B705C;
 }
 
-.grey-content p{
+.a-content p{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 250;
     color: #6B705C;
     
 }
 
-.grey-header {
+.a-header {
     padding-top: 85px;
     text-align: center;
 }
 
 
-.grey-header h1 {
+.a-header h1 {
     font-size: 30px;
     padding-bottom: 10px;
     text-transform: uppercase;
     color: #6B705C;
 }
 
-.grey-header p {
+.a-header p {
     padding: 10px 50px 0;
     font-weight: 400;
+    align: center;
 }
 
 
-.grey-section__cards  {
+.a-section__cards  {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -97,27 +134,27 @@ https://github.com/yllkashala/INT_20_21_Gr26.git
     padding-top: 55px;
 }
 
-.grey-section__cards h5 {
+.a-section__cards h5 {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
 }
 
-.grey__card {
+.a__card {
     padding: 10px;
 }
 
-.grey__card h1 {
+.a__card h1 {
     padding: 40px 0 2px;
     text-transform: uppercase;
 }
 
-.grey__card p {
+.a__card p {
     padding: 10px 30px 0;
 
 }
 
 
-.grey-section__cards img {
+.a-section__cards img {
     border-radius: 100%;
     width: 140px;
 }
@@ -125,4 +162,94 @@ https://github.com/yllkashala/INT_20_21_Gr26.git
 .simple-highlight{
  background-color:#A5A58D;
  padding:0.1em 0.2em;
+}
+footer{
+    background-color: #6B705C;
+    height: 5vh;
+    align-content: center;
+
+}
+footer p{
+    color: #B8B7A5;
+    text-align: center;
+    padding-top: 8px;
+}
+.shopi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFE8D6;
+    font-size: 300%;
+    text-align: center;
+}
+.aboutus{
+    background-color: #CB997E ;
+    height: 300%;
+}
+header.artistet{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(artistet.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header.shop{
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(shop.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+section.psh {
+    font-size: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFE8D6;
+    
+}
+
+.b {
+  
+    padding: 46px 8% 0;
+    text-align: center;
+    height: 80vh;
+    background-color: #CB997E;
+}
+
+
+.b h3 {
+    margin-top: 50px;
+    color: #6B705C;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+
+.b hr {
+    border: 1.5px solid #6B705C;
+    border-radius: 10px;
+    background-color: #6B705C;
+    width: 5%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+section.table{
+    align-items: center;
+    background-color: #B8B7A5;
+}
+header.ekspozitat{
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(ekspozita.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+section.table-e{
+background-color: #B8B7A5;
+}
+.clas{
+    color: #6B705C;
+    font-size: 35px;
 }
