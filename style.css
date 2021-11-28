@@ -166,7 +166,7 @@ ul li.active a{
 }
 footer{
     background-color: #6B705C;
-    height: 5vh;
+    height: auto;
     align-content: center;
 
 }
@@ -258,7 +258,17 @@ background-color: #B8B7A5;
 }
 header.kontakti{
       background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(kontakti.png);
-    height: 100vh;
+    height: 200vh;
     background-size: cover;
     background-position: center;
 }
+.signup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFE8D6;
+    font-size: 300%;
+    text-align: center;
+}
+
