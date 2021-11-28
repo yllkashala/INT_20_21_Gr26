@@ -6,6 +6,69 @@
 	<title>artsnest</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<style type="text/css">
+    footer{
+        background-color: rgb(177, 170, 170);
+    }
+
+.contact-section{
+            background-color: rgb(138, 126, 116);
+            background-size: cover;
+           
+
+        }
+        footer h1{
+            text-align: left;
+            color:black;
+            margin: 0 16px;
+
+        }
+        footer h3{
+            text-align: left;
+            color:rgb(0, 0, 0);
+            margin: 0 16px;
+        }
+        
+
+        .contact-form{
+        max-width:  width 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+            background: gray;
+
+        }
+        .contact-form-text{
+            display:block;
+            width:60%;
+            box-sizing: border-box;
+
+            margin: 16px 16px;
+            border: 0;
+            background: rgb(43, 42, 42);
+            padding: 20px 40px;
+            outline: none;
+            color:#ddd;
+		border radius: 20px;
+        }
+        .contact-form-button{
+            float:left;
+            border:0;
+            background:#34495e;
+            color:#fff;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor:pointer;
+            transition: 0.5s;
+            margin: 0 16px;
+       
+        }
+        textarea.contact-form-text{
+            resize: none;
+            height: 120px;
+        }
+
+</style>
 </head>
 <body>
 		<header>
@@ -19,7 +82,7 @@
 					<li><a href="artistet.html">ARTISTET</a></li>
 					<li><a href="ekspozitat.html">EKSPOZITAT</a></li>
 					<li><a href="shop.html">SHOP</a></li>
-					<li><a href="kontakti.html">KONTAKTI</a></li>
+					<li><a href="sign-up.html">SIGN-UP</a></li>
 				</ul>
 					</div>
 <div class="title">
@@ -35,13 +98,33 @@ lënë gjurmët e tyre ne historinë e artit</i>, për shkak se në Kosovë
 nuk kemi ende një platformë të dedikuar posaqërisht për 
 artistët e vendit tonë, dhe atyre nuk ju dhurohet
 hapësira e duhur për të shfaqur talentin e tyre.<hr></h3>
-                
-			</div>
-		</div>
+
+
 	</section>
 
 </body>
-<footer>
+<footer >
+    <br><br>
+    <h1>Contact Us</h1><br>
+<h3>Ku mund te na gjeni?</h3><a href="https://www.google.com/maps/place/Qendra+Studentore/@42.6587511,21.1539611,15z/data=!4m9!1m2!2m1!1sqendra+e+studenteve+Prishtine!3m5!1s0x13549f88112bf999:0xf48ca37e9c5921bd!8m2!3d42.6514728!4d21.1653482!15sCh1xZW5kcmEgZSBzdHVkZW50ZXZlIFByaXNodGluZZIBFnN0dWRlbnRfaG91c2luZ19jZW50ZXI?hl=en&authuser=0">📍Lokacioni</a>
+
+    <form>
+    
+        
+                    <form class="contact-form"action="contactus.html"method="post">
+                        <input type="text" class="contact-form-text"placeholder="Your name">
+                        <input type="email" class="contact-form-text"placeholder="E-mail">
+                        <input type="text" class="contact-form-text"placeholder="Your Phone-Number">
+                        <textarea class="contact-form-text"placeholder="Your message"></textarea>
+                        <input type="submit"class="contact-form-button"value="Send">
+                        <br><br>
+        
+                    </form>
+
+                        
+                    </div>
+                </div>
+                
 	<p>&copy; Copyright 2021 artsnest</p>
 </footer>
 </html>
