@@ -290,3 +290,14 @@ table.tabela-a{
     padding-left: 5px;
     text-decoration: none;
 }
+#linku-a{
+    color: #FFE8D6;
+}
+#linku-b{
+    color: #FFE8D6;
+}
+.teksti::before {
+  font-weight: bold;
+  color: #FFE8D6;
+  content: " us ";
+}
