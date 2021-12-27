@@ -123,8 +123,23 @@ hapësira e duhur për të shfaqur talentin e tyre.<hr></h3>
                         <input type="email" class="contact-form-text"placeholder="E-mail">
                         <input type="text" class="contact-form-text"placeholder="Your Phone-Number">
                         <textarea class="contact-form-text"placeholder="Your message"></textarea>
-                        <input type="submit"class="contact-form-button"value="Send">
-                        <br><br>
+                       
+                        <button onclick="myFunction()" style="background-color: #A5A58D; border-radius: 20px;"><input type="submit"class="contact-form-button"value="Send"></button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Ne te dhenat tuaja ka qasje vetem artsnest")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
         
                     </form>
 
