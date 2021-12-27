@@ -16,8 +16,8 @@
 		
 				<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="artistet.html">ARTISTET</a></li>
 					<li><a href="ekspozitat.html">EKSPOZITAT</a></li>
+					<li><a href="artistet.html">ARTISTET</a></li>
 					<li  class="active"><a href="shop.html">SHOP</a></li>
 					<li><a href="sign-up.html">SIGN UP</a></li>
 				</ul>
@@ -27,6 +27,32 @@
 						
 					</div>
 	</header>
+	<p>Enjoy some music while you shop!</p>
+	<audio controls>
+		<source src="audio.mp3" type=""audio/mp3>
+	</audio>
+	<p>How old are you?</p>
+	<input id="demo" type="text">
+	<button type="button" onclick="myFunction()">Submit</button>
+	<p id="p01"></p>
+	
+	<script>
+	function myFunction() {
+	  const message = document.getElementById("p01");
+	  message.innerHTML = "";
+	  let x = document.getElementById("demo").value;
+	  try { 
+		if(x == "")  throw "empty";
+		if(isNaN(x)) throw "not a number";
+		x = Number(x);
+	   
+		if(x <12)   throw "too youg";
+	  }
+	  catch(err) {
+		message.innerHTML = "User is " + err;
+	  }
+	}
+	</script>
 	<section class="table">
 		<table border="1" cellspacing="10.3" cellpadding="1" align="center">
 			
