@@ -74,6 +74,7 @@ ul li.active a{
  
 .a-section {
     background-color: #FFE8D6;
+    height: 160vh;
 }
 
 .a-content {
@@ -340,4 +341,10 @@ figcaption {
   25%  {background-color: #cc987a;}
   50%  {background-color: #a08c86;}
   100% {background-color: #c1ac96;}
+}
+
+.bb{
+    outline: 1px dashed #cb997e;
+  outline-offset: 0px;
+  resize: both;
 }
