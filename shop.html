@@ -6,6 +6,22 @@
 	<title>shop</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+audio{display:block;
+	width:95%;
+	box-sizing: border-box;
+
+
+	margin: 16px 16px;
+	
+	border: 0;
+	background: #A5A58D;
+	padding: 20px 40px;
+	outline: none;
+	color:#6B705C;
+
+}
+</style>
 
 </head>
 <body>
@@ -37,23 +53,7 @@
 	<button type="button" onclick="myFunction()">Submit</button>
 	<p id="p01"></p>
 	
-	<script>
-	function myFunction() {
-	  const message = document.getElementById("p01");
-	  message.innerHTML = "";
-	  let x = document.getElementById("demo").value;
-	  try { 
-		if(x == "")  throw "empty";
-		if(isNaN(x)) throw "not a number";
-		x = Number(x);
-	   
-		if(x <12)   throw "too youg";
-	  }
-	  catch(err) {
-		message.innerHTML = "User is " + err;
-	  }
-	}
-	</script>
+	
 	<section class="table">
 		<table border="1" cellspacing="10.3" cellpadding="1" align="center">
 			
@@ -80,6 +80,23 @@
        </figure>
         <p>In a beautiful world - <i>Frederico Di Dio</i><br><b>1500 &#8364</b></p></td>
       </tr>
+			<script>
+	function myFunction() {
+	  const message = document.getElementById("p01");
+	  message.innerHTML = "";
+	  let x = document.getElementById("demo").value;
+	  try { 
+		if(x == "")  throw "empty";
+		if(isNaN(x)) throw "not a number";
+		x = Number(x);
+	   
+		if(x <12)   throw "too youg";
+	  }
+	  catch(err) {
+		message.innerHTML = "User is " + err;
+	  }
+	}
+	</script>
 		</table>
 	</section>
 	<section style="background-color: #6B705C;">
