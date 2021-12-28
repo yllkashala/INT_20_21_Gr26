@@ -6,11 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <title>sign-up</title>
+
+
     <style type="text/css">
-   @font-face {
+      @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
+
+
     p.double {border-style: double;}                 
     body {
 
@@ -24,6 +28,10 @@
         color: white;
         text-align: left;
         
+      }
+      h4{
+        color: black;
+        text-align: center;
       }
       form{
           width: 500px;;
@@ -57,6 +65,11 @@
   opacity: 1; /* Firefox */
 }
 
+
+div {
+  font-family: myFirstFont;
+}
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color:rgb(100, 99, 99)
  
@@ -66,7 +79,7 @@
   color:rgb(100, 99, 99)k;
 }
 form button{
-  float:left;
+  float:center;
             border:0;
             background:#6B705C;
             color:#fff;
@@ -82,7 +95,7 @@ form button{
   margin: 2em;
   border: 3px solid #ddd;
   background-color: #eee;
-  max-width: 800px;
+  max-width: 100vh;
 }
 
 
@@ -98,10 +111,10 @@ form button{
             </div>
         
                 <ul>
-                    <li><a class="bb" href="index.html">HOME</a></li>
-                   <li><a class="bb" href="ekspozitat.html">EKSPOZITAT</a></li>
-                    <li><a class="bb" href="artistet.html">ARTISTET</a></li>
-                    <li><a class="bb" href="shop.html">SHOP</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                   <li><a href="ekspozitat.html">EKSPOZITAT</a></li>
+                    <li><a href="artistet.html">ARTISTET</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
           <li class="active"><a href="sign-up.html">SIGN-UP</a></li>
                 </ul>
                     </div>
@@ -118,7 +131,7 @@ form button{
 
 
 
-<form>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
     <form>
        
     <svg width="125" height="125">
@@ -166,12 +179,38 @@ form button{
 <div class="tacbox">
     <input id="checkbox" type="checkbox" />
     <label for="checkbox"> I agree to these <a href="https://www.iubenda.com/en/terms-and-conditions-generator?utm_source=adwords&utm_medium=ppc&utm_campaign=aw_competitors_global_exact&utm_term=term%20and%20condition&utm_content=226000093097&gclid=Cj0KCQiAkZKNBhDiARIsAPsk0WjHSnPj_NrUCvFNb8uaOdPSFAwjafo9_Sjwt_mYPiwMVdg40XdE3F8aAuIBEALw_wcB">Terms and Conditions</a>.</label>
+  <br><br>
+    <h4>How old are you?</h4>
+	<input id="demo" type="text">
+  <br><br>
+	<button type="button" onclick="myFunction()">OK</button>
+	<h4 id="p01"></h4>
+    <script>
+			function myFunction() {
+			  const message = document.getElementById("p01");
+			  message.innerHTML = "";
+			  let x = document.getElementById("demo").value;
+			  try { 
+				if(x == "")  throw "empty.";
+				if(isNaN(x)) throw "'s imput needs to be a number.";
+				x = Number(x);
+			   
+				if(x <18)   throw "must be over 16.";
+				if(x>=18)   throw "'s age is inserted."
+			  }
+			  catch(err) {
+				message.innerHTML = "User " + err;
+			  }
+			}
+			
+			</script>
   </div>
+
 <button type="submit" class="submit">Submit</button>
 <br><br>
 <p class="double">Already have an account?<a href="log-in.html" style="color: #FFE8D6;"> Sign in!</a></p>
    </form>
-    
+  
    
 
 
