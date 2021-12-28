@@ -323,6 +323,7 @@ figcaption {
 .animations{
     position: relative;
   animation: mymove 5s infinite;
+ 
 }
 @keyframes mymove {
   0%   {top: 0px;}
