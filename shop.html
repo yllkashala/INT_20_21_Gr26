@@ -23,6 +23,16 @@ audio{display:block;
 }
 </style>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".hide").click(function(){
+    $("canvas").toggle();
+  });
+});
+</script>
+
+
 </head>
 <body>
 		<header class="shop">
@@ -102,7 +112,10 @@ audio{display:block;
 	<section style="background-color: #6B705C;">
 		
 		<canvas></canvas>
-		<script src="canvas.js"></script>
+		<script src="canvas.js">
+		
+		</script>
+		<p class="hide" style="color: #FFE8D6; text-align: center; padding-top: 5px;">"If you want the rainbow you gotta put up with the rain"</p>
 	</section>
 </body>
 <footer>

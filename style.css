@@ -349,3 +349,17 @@ figcaption {
   outline-offset: 0px;
   resize: both;
 }
+#btn1, #btn2{
+    background-color: #6b705c;
+    border-radius: 20px;
+    height: 30px;
+    width: 750px;
+
+}
+.btn1, .btn2{
+    background-color: #6b705c;
+    border-radius: 20px;
+    height: 30px;
+    width: 750px;
+
+}

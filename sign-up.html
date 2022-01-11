@@ -7,6 +7,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <title>sign-up</title>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("svg").animate({height: "185px"});
+  });
+  $("#btn2").click(function(){
+    $("svg").animate({height: "100px"});
+  });
+});
+</script>
+<!--fade & slide-->
+<script> 
+$(document).ready(function(){
+  $("svg").click(function(){
+    $("img").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
+</script> 
+
 
     <style type="text/css">
       @font-face {
@@ -98,16 +123,24 @@ form button{
   max-width: 100vh;
 }
 
-
-
-      
       </style>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".tacbox").css("background-color", "#c1ac96");
+});
+</script>
+
+
+
 </head>
 <body>
         <header class="kontakti">
         <div>
             <div class="logo">
                 <img src="logo1.png">
+
             </div>
         
                 <ul>
@@ -122,15 +155,16 @@ form button{
             </div>
              
     </header>
-    </header>
+    
     
 
 
 
 
 
-
+<body>
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
     <form>
        
     <svg width="125" height="125">
@@ -209,8 +243,10 @@ form button{
 <br><br>
 <p class="double">Already have an account?<a href="log-in.html" style="color: #FFE8D6;"> Sign in!</a></p>
    </form>
- 
-   
+   <section style="background-color: #6b705c; height: 20px;">
+ <button id="btn1">Full length</button>
+<button id="btn2">Profile</button>
+   </section>
 
 
 
@@ -220,6 +256,7 @@ form button{
 </body>
 <footer>
   <p>&copy; Copyright 2021 artsnest</p>
+
 
 </footer>
 </html>
