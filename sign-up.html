@@ -218,6 +218,28 @@ $(document).ready(function(){
   <br><br>
 	<button type="button" onclick="myFunction()">OK</button>
 	<h4 id="p01"></h4>
+		    <h4>Access to your location.</h4>
+
+<button onclick="getLocation()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
     <script>
 			function myFunction() {
 			  const message = document.getElementById("p01");
