@@ -171,6 +171,28 @@ Written by <a id="linku-a" href="mailto:y.bicaj@gmail.com">Yllka Bicaj</a> &
 Visit<span class="teksti">at:</span><br>
 artsnest.com<br>
 	<p id="demo"></p>
+			    <h4>Access to you location.</h4>
+
+<button onclick="getLocation()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script><br>
 <script>
     const d = new Date(2021, 10, 24, 08, 30, 30, 0);
     document.getElementById("demo").innerHTML = 'DATE OF CREATION ' + d;
