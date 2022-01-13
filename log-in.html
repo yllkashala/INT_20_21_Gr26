@@ -5,6 +5,15 @@
     <meta name="viewpoint"content="width=device-width", initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 </head>
 <body>
 		<header class="login">
@@ -92,19 +101,18 @@ form button{
     </style>
     </head>
     <body>
-        <form>
         <div class="contact-section">
-            <h1>Log in</h1>
-            <form class="log-in"action="log-in.html"method="post">
-                <input type="text" class="log-in-text"placeholder="Username">
+           
+            <form class="log-in"action="log-in.html" method="post" name="myForm" onsubmit="return validateForm()" method="post">
+                <h1>Log in</h1>
+                <input type="text" class="log-in-text" name="fname"placeholder="Username">
                 <input type ="password"class="log-in-text"placeholder="Password"><br>
                 <br>
-			<p class="inset">Forgot password?<a href="https://support.google.com/mail/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" style="color: #FFE8D6; "> Get it back</a></p>							
+            <p class="inset">Forgot password?<a href="https://support.google.com/mail/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" style="color: #FFE8D6; "> Get it back</a></p>                         
                <br><br>
-	       <button type="submit" class="submit">Log-in</button>
-
-
+           <button type="submit" class="submit">Log-in</button>
 
 </form>
+</div>
 
     </body>
