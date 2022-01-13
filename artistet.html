@@ -6,6 +6,45 @@
     <title>artsnest</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+<!--JQuery callback-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".hidee").click(function(){
+    $(".hidee").hide("slow", function(){
+      alert("The section is now hidden");
+    });
+  });
+});
+</script>
+<style>
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
     <style type="text/css">
     p.inset {outline-style: inset;
         color: #6b725c;
@@ -149,6 +188,51 @@ document.getElementById("arti").innerHTML = artistet[2];
             </div>
         </div>
     </section>
+    <section class="hidee" style="background-color: #6B705C; height: 70vh;" >
+      <div style="padding:20px;"><img style="float: right; border-radius: 300px;" src="georgetown-ben-jerrys-1.jpg"><p style="font-size: 20px; color: #FFE8D6;"><strong style=" text-shadow: 2px 2px #a08c86">Nancy McIntyre, silk screen artist: </strong> “I like it when a place has been around long enough that there is a kind of tension between the way it was originally designed to look and the way it looks now, as well as a tension between the way it looks to whoever is caring for it and the way it looks to me. Trouble is, the kinds of places I find most appealing keep getting closed or torn down.
+
+What do I want to say with my art?
+
+Celebrate the human, the marks people make on the world. Treasure the local, the small-scale, the eccentric, the ordinary: whatever is made out of caring. Respect what people have built for themselves. Find the beauty in some battered old porch or cluttered, human-scale storefront, while it still stands.”</p></div>
+<p id="demo" style="font-size: 20px; color: #FFE8D6; padding: 20px;"></p>
+<script>
+
+//Konstruktori
+function Person(first, last, age, prof) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.prof = prof;
+}
+
+// Objektet
+const artisti1 = new Person("Alyssa", "Monks", 50, "skulptore");
+const artisti2 = new Person("Casey", "Baugh", 48,"piktor");
+
+
+artisti1.name = function() {
+  return this.prof ;
+};
+
+document.getElementById("demo").innerHTML =
+"Alyssa Monks eshte nje " + artisti1.name(); 
+</script>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="logo1.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<br>
+
+  <ol style="padding:40px; font-size: 20px; color: #FFE8D6;">
+       <li><a style="text-decoration: none; color:#FFE8D6; " target="_blank" href="http://www.nancymcintyrestudio.com/">Nancy McIntyre</a></li>
+       <li>Alyssa Monks</li>
+       <li>Casey Baugh </li> 
+    </ol>
+    </section>
+  
 
 </body>
 <footer>
