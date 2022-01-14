@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- JQuery Set-->
 <script>
 $(document).ready(function(){
   $("#btn1").click(function(){
@@ -15,7 +16,7 @@ $(document).ready(function(){
   });
   
 </script>
-
+<!--If...else-->
 <script>
 const hour = new Date().getHours(); 
 let greeting;
@@ -29,7 +30,7 @@ if (hour < 18) {
 document.getElementById("set").innerHTML = greeting;
 </script>
 
-<style type="text/css">
+<style>
 
 	p.outset {outline-style: outset;}
     <script type="text/javascript" src ="pro2.js">
@@ -119,9 +120,6 @@ document.getElementById("set").innerHTML = greeting;
        
 
 }
-
-        
-
 </style>
 </head>
 <body>
@@ -156,12 +154,14 @@ hapësira e duhur për të shfaqur talentin e tyre.</h3></div><hr>
 
 
 	</section>
+    <!--Alert box-->
 <script>
         alert('Accept Cookies 🍪');
         </script>
 </body>
 
 <footer>
+
     <br><br>
 	<h1><p class="outset">Contact Us</p></h1><br><hr>
 
@@ -179,7 +179,8 @@ hapësira e duhur për të shfaqur talentin e tyre.</h3></div><hr>
                         <button onclick="myFunction()" style="background-color: #A5A58D; border-radius: 20px;"><input type="submit"class="contact-form-button"value="Send"></button>
 
 <p id="demo"></p>
-
+<!--Warning box-->
+<!--IF...ELSE-->
 <script>
 function myFunction() {
   var txt;
@@ -212,7 +213,7 @@ artsnest.com<br>
 <button onclick="getLocation()">OK</button>
 
 <p id="demo"></p>
-
+<!--Geolocation-->
 <script>
 var x = document.getElementById("demo");
 
@@ -229,6 +230,7 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude;
 }
 </script><br>
+
 <script>
     const d = new Date(2021, 10, 24, 08, 30, 30, 0);
     document.getElementById("demo").innerHTML = 'DATE OF CREATION ' + d;

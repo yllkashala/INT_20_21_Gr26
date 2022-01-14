@@ -317,9 +317,7 @@ figcaption {
      transform: rotate(10deg);
 
 }
-.iframe{
-      transform: rotateZ(15deg);
-}
+
 .animations{
     position: relative;
   animation: mymove 5s infinite;

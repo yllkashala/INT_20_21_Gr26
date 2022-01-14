@@ -24,6 +24,7 @@ audio{display:block;
 </style>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!--TOGGLE PER ME FSHEH CANVAS-->
 <script>
 $(document).ready(function(){
   $(".hide").click(function(){
@@ -57,12 +58,8 @@ $(document).ready(function(){
 	<section class="table">
 	<p style="color: #6B705C; text-align: center; padding-top: 5px;">Enjoy some music while you shop!</p>
 	<audio controls>
-		<source src="audio.mp3" type=""audio/mp3>
+		<source src="audio.mp3" type="audio/mp3">
 	</audio>
-
-
-	
-
 	
 	<section class="table">
 		<table border="1" cellspacing="10.3" cellpadding="1" align="center">
@@ -90,25 +87,10 @@ $(document).ready(function(){
        </figure>
         <p>In a beautiful world - <i>Frederico Di Dio</i><br><b>1500 &#8364</b></p></td>
       </tr>
-			<script>
-	function myFunction() {
-	  const message = document.getElementById("p01");
-	  message.innerHTML = "";
-	  let x = document.getElementById("demo").value;
-	  try { 
-		if(x == "")  throw "empty";
-		if(isNaN(x)) throw "not a number";
-		x = Number(x);
-	   
-		if(x <12)   throw "too youg";
-	  }
-	  catch(err) {
-		message.innerHTML = "User is " + err;
-	  }
-	}
-	</script>
+   
 		</table>
 	</section>
+
 	<section style="background-color: #6B705C;">
 		
 		<canvas></canvas>
@@ -116,6 +98,9 @@ $(document).ready(function(){
 		
 		</script>
 		<p class="hide" style="color: #FFE8D6; text-align: center; padding-top: 5px;">"If you want the rainbow you gotta put up with the rain"</p>
+
+
+
 	</section>
 </body>
 <footer>

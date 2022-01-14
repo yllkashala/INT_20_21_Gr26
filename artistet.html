@@ -29,6 +29,7 @@ $(document).ready(function(){
   border: 1px solid black;
 }
 </style>
+<!--DRAG AND DROP-->
 <script>
 function allowDrop(ev) {
   ev.preventDefault();
@@ -56,6 +57,7 @@ function drop(ev) {
     }
     </style>
 </head>
+
 <body>
     <header class="artistet">
         <div>
@@ -87,7 +89,7 @@ function drop(ev) {
             <br><br>
            
                  <li><h3>Artistet e huaj<sub>(aktual)</sub></h3></li><br>
-           <ol>    
+           <ol style="padding: 10px;">    
                        <li> <a style="color: #FFE8D6;" href="https://www.alicavanaugh.com" target="_blank">Ali Cavanaugh</a></li><br>
             <li> <a style="color: #FFE8D6;" href="https://grandcentralatelier.org/" target="_blank">Gregory Mortenson </a></li><br>
             <li> <a style="color: #FFE8D6;" href="https://www.alyssamonks.com/profile" target="_blank">Alyssa Monks </a></li><br>
@@ -137,7 +139,7 @@ function drop(ev) {
                     <h1>Kolë Idromeno</h1>
                     <h5>
                         <abbr title="Fotograf">Fg.</abbr>
-                        <abbr title="Arkitekt">Arch</abbr>
+                        <abbr title="Arkitekt">Arch.</abbr>
                         <abbr title="Piktor">P.</abbr>
                         <abbr title="Skenograf">Sg.</abbr>
                          </h5>
@@ -171,7 +173,7 @@ function drop(ev) {
                     <h5><abbr title="Piktor">P.</abbr></h5>
 
                     <p><p id="arti"></p>
-
+<!--ARRAYS-->
 <script>
 const /*variabla globale*/ artistet = ["Indromeno", "Xhemajli", "Kolombi"];
 document.getElementById("arti").innerHTML = artistet[2];
@@ -195,8 +197,8 @@ What do I want to say with my art?
 
 Celebrate the human, the marks people make on the world. Treasure the local, the small-scale, the eccentric, the ordinary: whatever is made out of caring. Respect what people have built for themselves. Find the beauty in some battered old porch or cluttered, human-scale storefront, while it still stands.”</p></div>
 <p id="demo" style="font-size: 20px; color: #FFE8D6; padding: 20px;"></p>
-<script>
 
+<script>
 //Konstruktori
 function Person(first, last, age, prof) {
   this.firstName = first;
