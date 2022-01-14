@@ -233,6 +233,24 @@ document.getElementById("demo").innerHTML =
        <li>Alyssa Monks</li>
        <li>Casey Baugh </li> 
     </ol>
+          <script>
+      function bigLoop() {
+         
+         for (var i = 0; i <= 10000; i += 1) {
+            var j = i;
+         }
+         alert("Completed " + j + "iterations" );
+      }
+      
+      function sayHello(){
+         alert("Hello" );
+      }
+   </script>
+   
+
+   <input type = "button" onclick = "bigLoop();" value = "Big Loop" />
+   <input type = "button" onclick = "sayHello();" value = "Say Hello" />
+</body>
     </section>
   
 
